@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.9.13 on win32)" generated="20230719 16:44:06.291" rpa="true" schemaversion="3">
+<suite id="s1" name="Tasks" source="c:\Users\samukada\OneDrive - Capgemini\Desktop\PY Scripts\Robot\tasks.robot">
+<test id="s1-t1" name="Open the robot order website" line="14">
+<kw name="Open Available Browser" library="RPA.Browser.Selenium">
+<arg>${url}</arg>
+<doc>Attempts to open a browser on the user's device from a set of
+supported browsers. Automatically downloads a corresponding webdriver
+if none is already installed.</doc>
+<msg timestamp="20230719 16:44:11.959" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<msg timestamp="20230719 16:44:40.525" level="INFO">Created Chrome browser with arguments: --disable-dev-shm-usage --disable-web-security --allow-running-insecure-content --no-sandbox</msg>
+<msg timestamp="20230719 16:44:40.526" level="INFO" html="true">&lt;p&gt;Attempted combinations:&lt;/p&gt;&lt;div class="doc"&gt;&lt;table&gt;&lt;tr&gt;&lt;th&gt;Browser&lt;/th&gt;&lt;th&gt;Download&lt;/th&gt;&lt;th&gt;Error&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Chrome&lt;/td&gt;&lt;td&gt;False&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;</msg>
+<msg timestamp="20230719 16:44:40.527" level="INFO">Opening url 'https://robotsparebinindustries.com/#/robot-order'</msg>
+<status status="PASS" starttime="20230719 16:44:11.954" endtime="20230719 16:44:43.912"/>
+</kw>
+<status status="PASS" starttime="20230719 16:44:11.951" endtime="20230719 16:44:43.953"/>
+</test>
+<doc>Orders robots from RobotSpareBin Industries Inc.
+Saves the order HTML receipt as a PDF file.
+Saves the screenshot of the ordered robot.
+Embeds the screenshot of the robot to the PDF receipt.
+Creates ZIP archive of the receipts and the images.</doc>
+<status status="PASS" starttime="20230719 16:44:06.368" endtime="20230719 16:44:43.974"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tasks</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Tasks">Tasks</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
